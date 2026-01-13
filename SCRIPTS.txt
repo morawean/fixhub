@@ -1,0 +1,52 @@
+===========================================
+FIX Hub - Shell Scripts for Startup/Stop
+===========================================
+
+AVAILABLE SCRIPTS:
+==================
+
+1. start.sh
+   - Builds and starts the complete application
+   - Builds frontend (React/Vite)
+   - Builds backend (Maven)
+   - Starts server on port 8080
+   - Usage: ./start.sh
+
+2. stop.sh
+   - Stops the running FIX Hub instance
+   - Cleans up process files
+   - Usage: ./stop.sh
+
+QUICK START:
+============
+
+cd /home/am/Dokumente/develop/finclusion
+./start.sh
+
+Then visit: http://localhost:8080
+Login with: admin / admin
+
+TO STOP:
+========
+
+./stop.sh
+
+OR manually:
+
+pkill -f 'java.*fix-hub'
+
+FEATURES:
+=========
+
+✓ One-command startup
+✓ Automatic build (frontend + backend)
+✓ Colored output with progress
+✓ Health check before success
+✓ Automatic cleanup of old processes
+✓ Server availability check with retries
+✓ Clean stop script
+
+MORE INFO:
+==========
+
+See STARTUP.md for detailed documentation

@@ -1,0 +1,13 @@
+[ {
+  "id" : "00acb2eb-1433-4aaf-bc00-3a83360cc1a9",
+  "name" : "test",
+  "host" : "",
+  "port" : 9878,
+  "settingsFile" : ""
+}, {
+  "id" : "e3b30fa0-e57c-4076-9fbf-36add07557f9",
+  "name" : "final-1",
+  "host" : "0.0.0.0",
+  "port" : 9901,
+  "settingsFile" : "conf/acceptor-1.cfg"
+} ]

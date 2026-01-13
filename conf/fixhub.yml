@@ -1,0 +1,15 @@
+incoming:
+  - name: acceptor-1
+    port: 9878
+    fixVersion: FIX.4.4
+    settingsFile: conf/acceptor-1.cfg
+
+outgoing:
+  - name: broker-a
+    host: broker-a.example.local
+    port: 5001
+    fixVersion: FIX.4.4
+
+routes:
+  - from: acceptor-1
+    to: broker-a

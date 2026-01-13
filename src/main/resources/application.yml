@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+fixhub:
+  config-path: ./conf/fixhub.yml
+  connections-file: ./conf/connections.json
+
+app:
+  jwt:
+    secret: fix-hub-secret-key-please-change-in-production-at-least-32-chars-long
+    expiration: 86400000
